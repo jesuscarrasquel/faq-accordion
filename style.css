@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.grad1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-color: hsl(273, 75%, 66%); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+
+  .grad1 .card {
+      background-color: #ffffff;
+      width: 65%;
+      height: 65%;
+      margin: auto;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px black;
+      overflow: hidden;
+      z-index: 1;
+  }
+
+  .accordion {
+    margin-top: 20px;
+  }
+
+  .accordion-item {
+    width: 350px;
+  }
+
+  .faq{
+    margin-top: 50px;
+    /* font-family: Kumbh Sans; */
+    margin-left: 20px;
+    font-weight: 700;
+    
+  }
+
+  .imagenes {
+      position: relative;
+  }
+
+  .woman {
+      position: absolute;
+      top: 80px;
+      left: -70px;
+      width:400px; 
+      height:290px;
+  }
+
+  .caja {
+      position: absolute;
+      top: 320px;
+      left: 170px;
+      width:150px;
+      height: 150px;
+      z-index:2;
+  }
+
+  .accordion-header .question{
+      font-size: 12px;
+      /* font-weight: 400; */
+      font-family: Kumbh Sans;
+  }
+
+  .answer {
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Kumbh Sans;
+  }
+
+  .accordion-item .accordion-button::after {
+      background-image: url("./images/icon-arrow-down.svg");
+      height: 15px;
+      width: 20px;
+  }
+
+  .accordion-item .accordion-button:not(.collapsed)::after{
+    background-image: url("./images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+  }
+
+  .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: black;
+    font-weight: 700;
+    background-color: #ffffff;
+  }
+
+  .accordion .accordion-item .accordion-header .accordion-button:focus {
+    border-color: gainsboro;
+    box-shadow: none;
+  }
